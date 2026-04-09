@@ -1,0 +1,214 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pruthviraj Portfolio</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    background: #0f172a;
+    color: white;
+}
+
+/* Navbar */
+header {
+    background: #020617;
+    padding: 15px 50px;
+    position: sticky;
+    top: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: #38bdf8;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #38bdf8;
+}
+
+/* Hero */
+.hero {
+    text-align: center;
+    padding: 120px 20px;
+}
+
+.hero span {
+    color: #38bdf8;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    background: #38bdf8;
+    color: black;
+    cursor: pointer;
+    margin-top: 20px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #0ea5e9;
+}
+
+/* Sections */
+section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+/* Skills */
+.skill-box {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.skill-box p {
+    background: #1e293b;
+    padding: 10px 20px;
+    border-radius: 8px;
+}
+
+/* Projects */
+.project-card {
+    background: #1e293b;
+    padding: 20px;
+    margin: 10px auto;
+    border-radius: 10px;
+    max-width: 300px;
+    transition: 0.3s;
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #020617;
+}
+
+/* Responsive */
+@media(max-width: 768px){
+    nav {
+        flex-direction: column;
+    }
+
+    nav ul {
+        margin-top: 10px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <nav>
+        <h2 class="logo">Pruthviraj</h2>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section id="home" class="hero">
+    <h1>Hello, I'm <span>Pruthviraj CN</span></h1>
+    <p>Data Analyst Intern | AI Student | Web Developer</p>
+    <button onclick="scrollToSection('contact')">Hire Me</button>
+</section>
+
+<section id="about">
+    <h2>About Me</h2>
+    <p>
+        I am an Artificial Intelligence student passionate about Data Analysis,
+        Web Development, and building real-world projects. I have completed internships
+        and certifications that helped me grow technically.
+    </p>
+</section>
+
+<section id="skills">
+    <h2>Skills</h2>
+    <div class="skill-box">
+        <p>HTML</p>
+        <p>CSS</p>
+        <p>JavaScript</p>
+        <p>Python</p>
+        <p>Pandas</p>
+    </div>
+</section>
+
+<section id="projects">
+    <h2>Projects</h2>
+
+    <div class="project-card">
+        <h3>Portfolio Website</h3>
+        <p>Personal portfolio built using HTML, CSS, JS</p>
+    </div>
+
+    <div class="project-card">
+        <h3>Data Analysis Project</h3>
+        <p>Worked with Pandas for data insights</p>
+    </div>
+
+</section>
+
+<section id="contact">
+    <h2>Contact Me</h2>
+    <p>Email: yourmail@gmail.com</p>
+    <p>LinkedIn: linkedin.com/in/pruthviraj-cn</p>
+</section>
+
+<footer>
+    <p>© 2026 Pruthviraj CN</p>
+</footer>
+
+<script>
+function scrollToSection(sectionId) {
+    document.getElementById(sectionId).scrollIntoView({
+        behavior: "smooth"
+    });
+}
+</script>
+
+</body>
+</html>
+```
